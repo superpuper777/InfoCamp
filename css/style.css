@@ -481,8 +481,8 @@ img {
 .wrapper-full {
   max-width: 1440px;
   margin: 0 auto;
-  /* position: relative;
-  z-index: 0; */
+  position: relative;
+  z-index: 0;
 }
 
 .wrapper {
@@ -499,6 +499,10 @@ img {
 
 .highlighter {
   color: #5dac18;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 @font-face {
@@ -792,3 +796,86 @@ body {
 }
 
 /* camp__descriptions end */
+
+.wrapper__bg-full {
+  position: relative;
+  z-index: 9999;
+  height: 2420px;
+  background: url(../images/wr_full-boy.png), url(../images/wr_full-bg.png);
+  background-repeat: no-repeat;
+  background-position: center left, center left;
+}
+
+/* camp__standarts styles start */
+.camp__standarts_wrapper {
+  background: url(../images/stand_frame_bg.png), url(../images/info-bg.png);
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 0;
+  background-position: right top, center top;
+}
+.camp__standarts_content {
+  margin-bottom: 87px;
+}
+.camp__standarts_title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 89px;
+  color: #343434;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.camp__standarts_text {
+  font-size: 16px;
+  line-height: 30px;
+  width: 566px;
+  display: block;
+  margin: 0 auto;
+}
+
+.camp__standarts_cards_wr {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.camp__standarts_card {
+  width: 580px;
+  height: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url(/images/svg/stand_bg_icon.svg) no-repeat left center;
+}
+
+.camp__standarts_card-title {
+  position: relative;
+  z-index: -2;
+  background: white;
+  width: 560px;
+  height: 100px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 35px;
+  margin: 0 100px;
+  padding-right: 20px;
+}
+
+.camp__standarts_card-text {
+  /* text-align: center; */
+  margin-top: 40px;
+  margin-left: 70px;
+}
+
+.long {
+  margin-top: 25px;
+}
+
+.middle {
+  margin-top: 30px;
+}
+
+/* camp__standarts styles end */
