@@ -488,6 +488,7 @@ img {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  /* margin-bottom: 88px; */
 }
 
 .title {
@@ -814,9 +815,10 @@ body {
   position: relative;
   z-index: 0;
   background-position: right top, center top;
+  /* padding-bottom: 88px; */
 }
 .camp__standarts_content {
-  margin-bottom: 87px;
+  margin-bottom: 88px;
 }
 .camp__standarts_title {
   font-weight: 800;
@@ -879,3 +881,87 @@ body {
 }
 
 /* camp__standarts styles end */
+
+/* camp__benefits styles start */
+.camp__benefits_wrapper {
+  height: 100%;
+  background: url(../images/benefits_girl_bg.png), url(../images/info-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 10% bottom 20%, bottom;
+  padding-bottom: 600px;
+}
+
+.camp__benefits-title {
+  /* padding-top: 60px; */
+  text-align: center;
+  margin-bottom: 88px;
+  margin-top: 88px;
+}
+
+.camp__benefits-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.camp__benefits-card {
+  height: 414px;
+  width: 348px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 35px;
+  padding: 35px;
+  margin-bottom: 35px;
+}
+.camp__benefits-card_pic {
+  width: 210px;
+  height: 210px;
+  padding: 50%;
+}
+
+.observer {
+  background: url(../images/benefits_observ.png), url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 30%, center;
+}
+
+.forest {
+  background: url(../images/benefits_forest.png), url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 30%, center;
+}
+.map {
+  background: url(../images/benef_ball.png), url(../images/benef_map.png),
+    url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: bottom 35% right 30%, center top 30%, center;
+}
+.school {
+  background: url(../images/benefits_school.png), url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 30%, center;
+}
+
+.eat {
+  background: url(../images/benefits_eat.png), url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 30%, center;
+}
+
+.man {
+  background: url(../images/benefits_man.png), url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: center top 30%, center;
+}
+.camp__benefits-card_link {
+  text-align: center;
+}
+.benefits__link {
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  color: #343434;
+}
+/* camp__benefits styles end */
