@@ -684,7 +684,7 @@ body {
 
 /* camp__info styles start */
 .camp__info_wrapper {
-  height: 1200px;
+  /* height: 800px; */
   padding-top: 88px;
   position: relative;
   z-index: -1;
@@ -765,11 +765,12 @@ body {
   line-height: 18px;
   color: #ffffff;
 }
+
 /* camp__info styles end */
 
 /* camp__descriptions start */
 .camp__descriptions_wrapper {
-  height: 1200px;
+  /* height: 1200px; */
   background: url(../images/decription-girl.png),
     url(../images/description-bg-1.png), url(../images/decription-bg-2.png);
   background-repeat: no-repeat;
@@ -817,9 +818,11 @@ body {
   background-position: right top, center top;
   /* padding-bottom: 88px; */
 }
+
 .camp__standarts_content {
   margin-bottom: 88px;
 }
+
 .camp__standarts_title {
   font-weight: 800;
   font-size: 64px;
@@ -883,13 +886,6 @@ body {
 /* camp__standarts styles end */
 
 /* camp__benefits styles start */
-.camp__benefits_wrapper {
-  height: 100%;
-  background: url(../images/benefits_girl_bg.png), url(../images/info-bg.png);
-  background-repeat: no-repeat;
-  background-position: right 10% bottom 20%, bottom;
-  padding-bottom: 600px;
-}
 
 .camp__benefits-title {
   /* padding-top: 60px; */
@@ -914,6 +910,7 @@ body {
   padding: 35px;
   margin-bottom: 35px;
 }
+
 .camp__benefits-card_pic {
   width: 210px;
   height: 210px;
@@ -931,12 +928,14 @@ body {
   background-repeat: no-repeat;
   background-position: center top 30%, center;
 }
+
 .map {
   background: url(../images/benef_ball.png), url(../images/benef_map.png),
     url(../images/ellipse.png);
   background-repeat: no-repeat;
   background-position: bottom 35% right 30%, center top 30%, center;
 }
+
 .school {
   background: url(../images/benefits_school.png), url(../images/ellipse.png);
   background-repeat: no-repeat;
@@ -954,9 +953,11 @@ body {
   background-repeat: no-repeat;
   background-position: center top 30%, center;
 }
+
 .camp__benefits-card_link {
   text-align: center;
 }
+
 .benefits__link {
   font-size: 24px;
   line-height: 38px;
@@ -964,4 +965,54 @@ body {
   text-decoration: none;
   color: #343434;
 }
+
 /* camp__benefits styles end */
+
+/* footer styles start */
+.footer {
+  height: 88px;
+  background: #fa431c;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.footer__wrapper {
+  background: url(../images/benefits_girl_bg.png), url(../images/info-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 10% top 70%, top;
+  padding-bottom: 510px;
+}
+
+.footer__content {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer__recall_link {
+  padding: 23px 80px 23px 23px;
+  background: url(../images/footer_recall.png), rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  background-repeat: no-repeat;
+  background-position: bottom 50% right 2%;
+}
+
+.recall_link {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* footer styles end */
