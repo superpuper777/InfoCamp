@@ -778,13 +778,11 @@ body {
 }
 
 .camp__descriptions_content {
-  width: 566px;
-  height: 336px;
-  margin-left: 650px;
-  margin-top: 160px;
+  padding-left: 650px;
+  padding-top: 250px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: end;
 }
 
 .text {
@@ -839,7 +837,6 @@ body {
 .camp__standarts_cards_wr {
   display: flex;
   flex-wrap: wrap;
-  flex-flow: row;
   align-items: center;
   justify-content: center;
 }
@@ -1012,3 +1009,5 @@ body {
 }
 
 /* footer styles end */
+
+/* <1184 */
