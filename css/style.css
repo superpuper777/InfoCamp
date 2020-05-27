@@ -684,7 +684,7 @@ body {
 
 /* camp__info styles start */
 .camp__info_wrapper {
-  /* height: 800px; */
+  height: 1200px;
   padding-top: 88px;
   position: relative;
   z-index: -1;
@@ -770,15 +770,11 @@ body {
 
 /* camp__descriptions start */
 .camp__descriptions_wrapper {
-  /* height: 1200px; */
+  height: 1000px;
   background: url(../images/decription-girl.png),
     url(../images/description-bg-1.png), url(../images/decription-bg-2.png);
   background-repeat: no-repeat;
   background-position: top right, top right, center left;
-}
-
-.camp__descriptions_title {
-  margin-bottom: 83px;
 }
 
 .camp__descriptions_content {
@@ -976,10 +972,10 @@ body {
 }
 
 .footer__wrapper {
-  background: url(../images/benefits_girl_bg.png), url(../images/info-bg.png);
+  background: url(../images/benefits_girl_bg.png), url(../images/footer-bg.png);
   background-repeat: no-repeat;
   background-position: right 10% top 70%, top;
-  padding-bottom: 510px;
+  padding-bottom: 290px;
 }
 
 .footer__content {
