@@ -850,7 +850,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: url(/images/svg/stand_bg_icon.svg) no-repeat left center;
+  background: url(../images/svg/stand_bg_icon.svg) no-repeat left center;
 }
 
 .camp__standarts_card-title {
