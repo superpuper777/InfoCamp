@@ -488,10 +488,10 @@ img {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  /* margin-bottom: 88px; */
 }
 
 .title {
+  padding-left: 40px;
   font-weight: 800;
   font-size: 64px;
   line-height: 89px;
@@ -548,12 +548,13 @@ body {
 
 /* header styles start */
 .header {
+  /* position: fixed;
+  z-index: 999999999; */
   background: linear-gradient(180deg, #75d522 0%, #5dac18 100%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .header__wrapper {
-  height: 90px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -624,7 +625,6 @@ body {
 }
 
 .counter__wrapper {
-  height: 90px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -684,13 +684,13 @@ body {
 
 /* camp__info styles start */
 .camp__info_wrapper {
-  height: 1200px;
   padding-top: 88px;
   position: relative;
   z-index: -1;
   background: url(../images/info-bg.png), url(../images/info-img.jpg);
   background-repeat: no-repeat;
   background-position: bottom center, top right;
+  padding-bottom: 120px;
 }
 
 .camp__info_title {
@@ -711,7 +711,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .camp__info_card {
@@ -770,16 +770,18 @@ body {
 
 /* camp__descriptions start */
 .camp__descriptions_wrapper {
-  height: 1000px;
+  /* height: 1000px; */
   background: url(../images/decription-girl.png),
     url(../images/description-bg-1.png), url(../images/decription-bg-2.png);
   background-repeat: no-repeat;
-  background-position: top right, top right, center left;
+  background-position: top right, top right, bottom left;
+  margin-bottom: 120px;
 }
 
 .camp__descriptions_content {
+  padding-top: 200px;
   padding-left: 650px;
-  padding-top: 250px;
+  padding-bottom: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
@@ -963,7 +965,7 @@ body {
 
 /* footer styles start */
 .footer {
-  height: 88px;
+  /* height: 88px; */
   background: #fa431c;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
@@ -1010,4 +1012,75 @@ body {
 
 /* footer styles end */
 
-/* <1184 */
+/* media */
+@media (max-width: 1190px) {
+  .header__wrapper {
+    padding: 20px;
+  }
+
+  .thousands,
+  .hundreds,
+  .millions {
+    background: none;
+  }
+
+  .user__counter-number {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .user__counter-text,
+  .user__counter-numbers {
+    margin: 0 auto;
+  }
+
+  .camp__descriptions_wrapper {
+    background: url(../images/decription-girl.png),
+      url(../images/description-bg-1.png);
+    background-repeat: no-repeat;
+    background-position: top right, top right;
+    margin-bottom: 0;
+  }
+
+  .camp__descriptions_content {
+    padding-left: 80px;
+  }
+
+  .camp__standarts_cards_wr {
+    justify-content: flex-end;
+  }
+
+  .footer__contact {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1054px) {
+  .camp__info_wrapper {
+    background: none;
+  }
+
+  .camp__info_desc {
+    margin: 0 auto;
+    padding-bottom: 130px;
+  }
+
+  .camp__descriptions_wrapper {
+    background: url(../images/decription-girl.png),
+      url(../images/description-bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center right, center right;
+  }
+  .camp__descriptions_content {
+    padding: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__items,
+  .header__icons,
+  .header__login-item {
+    margin-top: 10px;
+  }
+}
