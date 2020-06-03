@@ -491,7 +491,7 @@ img {
 }
 
 .title {
-  padding-left: 40px;
+  /* padding-left: 40px; */
   font-weight: 800;
   font-size: 64px;
   line-height: 89px;
@@ -615,6 +615,17 @@ body {
 .header__login-item {
   margin-left: 70px;
 }
+.header__login-link:hover,
+.header__login-link:active,
+.header__item-link:hover,
+.header__item-link:active {
+  color: black;
+}
+
+.header__icon:hover,
+.header__icon:active {
+  transform: translateX(5px);
+}
 
 /* header styles end */
 
@@ -690,7 +701,7 @@ body {
   background: url(../images/info-bg.png), url(../images/info-img.jpg);
   background-repeat: no-repeat;
   background-position: bottom center, top right;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
 }
 
 .camp__info_title {
@@ -765,7 +776,11 @@ body {
   line-height: 18px;
   color: #ffffff;
 }
-
+.camp__info_card-reservation:hover,
+.camp__info_card-reservation:active {
+  color: black;
+  background: #5dac18;
+}
 /* camp__info styles end */
 
 /* camp__descriptions start */
@@ -775,7 +790,7 @@ body {
     url(../images/description-bg-1.png), url(../images/decription-bg-2.png);
   background-repeat: no-repeat;
   background-position: top right, top right, bottom left;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .camp__descriptions_content {
@@ -798,7 +813,7 @@ body {
 .wrapper__bg-full {
   position: relative;
   z-index: 9999;
-  height: 2420px;
+  height: 2220px;
   background: url(../images/wr_full-boy.png), url(../images/wr_full-bg.png);
   background-repeat: no-repeat;
   background-position: center left, center left;
@@ -837,10 +852,10 @@ body {
 }
 
 .camp__standarts_cards_wr {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: ;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5px;
 }
 
 .camp__standarts_card {
@@ -961,6 +976,16 @@ body {
   color: #343434;
 }
 
+.benefits__link:hover,
+.benefits__link:active {
+  color: #5dac18;
+}
+
+.camp__benefits-card_pic:hover,
+.camp__benefits-card_pic:active {
+  opacity: 0.5;
+}
+
 /* camp__benefits styles end */
 
 /* footer styles start */
@@ -998,18 +1023,33 @@ body {
   border-radius: 35px;
   background-repeat: no-repeat;
   background-position: bottom 50% right 2%;
+  transition: 3s;
+  cursor: pointer;
 }
 
 .recall_link {
   text-align: center;
+  display: inline-block;
   margin-top: 5px;
   font-size: 16px;
   font-weight: bold;
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+  transition: 0.5s;
 }
 
+.footer__recall_link:hover,
+.footer__recall_link:active {
+  background: url(../images/footer_recall.png), rgba(255, 255, 255, 0.3);
+  border-radius: 35px;
+  background-repeat: no-repeat;
+  background-position: bottom 80% right 2%;
+}
+.recall_link:hover,
+.recall_link:active {
+  transform: translateX(10px);
+}
 /* footer styles end */
 
 /* media */
