@@ -1052,6 +1052,9 @@ body {
 }
 /* footer styles end */
 
+.example {
+  transition: 2s;
+}
 /* media */
 @media (max-width: 1190px) {
   .header__wrapper {
@@ -1093,6 +1096,14 @@ body {
 
   .footer__contact {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .column-1,
+  .column-2 {
+    grid-column: span 2;
+    grid-column-start: 2;
   }
 }
 
@@ -1178,36 +1189,5 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-  }
-  .camp__standarts_cards_wr {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .camp__standarts_card {
-    background: none;
-    width: 400px;
-  }
-
-  .camp__standarts_cards {
-    justify-content: start;
-  }
-  .camp__standarts_card-title {
-    background: none;
-    padding: 0;
-  }
-
-  .camp__standarts_card-text {
-    margin-top: 40px;
-    margin-left: 20px;
-  }
-
-  .long {
-    margin-top: 0px;
-  }
-
-  .middle {
-    margin-top: 30px;
   }
 }
